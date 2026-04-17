@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Remove Book Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Remove Book</h1>
+        <p>
+            Please enter ID of book to remove from the database:
+        </p>
+        <form action="RemoveBookServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td>ID: </td>
+                    <td><input type="text" name="id" required="" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="REMOVE BOOK" /></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
