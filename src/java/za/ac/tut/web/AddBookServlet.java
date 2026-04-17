@@ -33,6 +33,8 @@ private BookFacadeLocal bk;
         // assign book to private createBook method
         Book book = createBook(title, price, description, isbn, pages, illustrations);
         bk.create(book);
+        System.out.println("BOOK SENT TO EJB: " + book.getTitle());
+        
         //jsp
         RequestDispatcher disp = request.getRequestDispatcher("add_book_outcome.jsp");
         disp.forward(request, response);
@@ -48,7 +50,7 @@ private BookFacadeLocal bk;
         book.setIsbn(bn);
         book.setNumOfPages(pages);
         book.setIllustrations(illustrations);
-        book.setCreationDate(new Date());
+        book.setCreationDate(new java.sql.Timestamp(System.currentTimeMillis()));
         
         return book;
     }

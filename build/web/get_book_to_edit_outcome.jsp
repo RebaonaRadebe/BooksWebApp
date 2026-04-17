@@ -10,6 +10,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <title>Get Book To Edit Outcome Page</title>
     </head>
     <body>
